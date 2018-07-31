@@ -3,9 +3,10 @@ angular.module('ifg.copyToClipboard', [])
   return {
     retrict: 'A',
     scope: {
-      ifgCopyToClipboard: '@'
+      ifgCopyToClipboard: '@',
+      onCopy: '&'
     },
-    link(scope, elem, attrs) {
+    link(scope, elem) {
       const _el = elem[0]
       const text = scope.ifgCopyToClipboard
 
@@ -28,6 +29,7 @@ angular.module('ifg.copyToClipboard', [])
         document.execCommand('copy')
         sel.removeAllRanges()
         document.body.removeChild(el)
+        if (scope.onCopy) scope.onCopy()
       })
     }
   }
