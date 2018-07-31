@@ -9,12 +9,14 @@
   "scripts": {
     "postinstall": "./postinstall",
     "release": "yarn build && angular-release",
-    "build": "minify src -d lib"
+    "build": "babel src -d lib && minify lib/ifg-copy-to-clipboard.js -o lib/ifg-copy-to-clipboard.min.js"
   },
   "dependencies": {},
   "devDependencies": {
     "angular-precommit": "1.0.3",
     "angular-release": "1.2.0",
-    "babel-minify": "0.4.3"
+    "babel-cli": "6.26.0",
+    "babel-minify": "0.4.3",
+    "babel-preset-env": "1.7.0"
   }
 }
