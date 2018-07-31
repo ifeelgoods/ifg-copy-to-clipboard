@@ -10,7 +10,7 @@ angular.module('ifg.copyToClipboard', [])
       const _el = elem[0]
       const text = scope.ifgCopyToClipboard
 
-      _el.addEventListener('click', () => {
+      _el.addEventListener('click', (evt) => {
         const el = document.createElement('span')
         const range = document.createRange()
         const sel = window.getSelection()
@@ -29,7 +29,7 @@ angular.module('ifg.copyToClipboard', [])
         document.execCommand('copy')
         sel.removeAllRanges()
         document.body.removeChild(el)
-        if (scope.onCopy) scope.onCopy()
+        if (scope.onCopy) scope.onCopy({ $event: evt })
       })
     }
   }
