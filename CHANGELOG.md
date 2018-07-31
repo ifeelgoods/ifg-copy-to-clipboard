@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/ifeelgoods/ifg-copy-to-clipboard/compare/1.1.0...1.2.0) (2018-07-31)
+
+
+### Features
+
+* Pass event to onCopy function ([80a8cda](https://github.com/ifeelgoods/ifg-copy-to-clipboard/commit/80a8cda))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/ifeelgoods/ifg-copy-to-clipboard/compare/1.0.1...1.1.0) (2018-07-31)
 
