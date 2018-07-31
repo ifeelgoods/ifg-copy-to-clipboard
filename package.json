@@ -1,0 +1,20 @@
+{
+  "name": "ifg-copy-to-clipboard",
+  "version": "0.0.1",
+  "description": "AngularJS copy to clipboard directive",
+  "main": "src/ifg-copy-to-clipboard.js",
+  "repository": "git@github.com:ifeelgoods/ifg-copy-to-clipboard.git",
+  "author": "Chris G. <c.gourmelon@ifeelgoods.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "./postinstall",
+    "release": "angular-release",
+    "build": "minify src -d lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "angular-precommit": "1.0.3",
+    "angular-release": "1.2.0",
+    "babel-minify": "0.4.3"
+  }
+}
