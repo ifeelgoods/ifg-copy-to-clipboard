@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/ifeelgoods/ifg-copy-to-clipboard/compare/1.0.0...1.0.1) (2018-07-31)
+
+
+### Bug Fixes
+
+* Fix angular module name typo ([3ca09f6](https://github.com/ifeelgoods/ifg-copy-to-clipboard/commit/3ca09f6))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2018-07-31)
 
