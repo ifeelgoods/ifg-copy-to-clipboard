@@ -1,4 +1,4 @@
-angular.module('ifg.copyToClipbard', [])
+angular.module('ifg.copyToClipboard', [])
 .directive('ifgCopyToClipboard', function() {
   return {
     retrict: 'A',

@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "./postinstall",
-    "release": "angular-release",
+    "release": "yarn build && angular-release",
     "build": "minify src -d lib"
   },
   "dependencies": {},
